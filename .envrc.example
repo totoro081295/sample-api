@@ -1,0 +1,10 @@
+# GO関連
+export GO111MODULE=on
+# API関連
+export SWAGGER_HOST="localhost:8081"
+export PORT="8081"
+
+# DB関連 
+export DATABASE_URL=postgres://DB_USER_NAME:@localhost:5432/sample-api?sslmode=disable
+#### LOGLEVEL → 1 ... Silent, 2 ... Error, 3 ... Warn, 4 ... Info
+export LOGLEVEL=1
