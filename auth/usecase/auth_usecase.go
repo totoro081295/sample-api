@@ -4,8 +4,6 @@ import (
 	"sample-api/domain"
 	"sample-api/utils"
 	"sample-api/utils/status"
-
-	"github.com/k0kubun/pp"
 )
 
 type authUsecase struct {
@@ -32,7 +30,6 @@ func (a *authUsecase) Login(l *domain.Auth) (*domain.Token, error) {
 
 	token, err := a.token.GenerateJWT(u.ID, false)
 	if err != nil {
-		pp.Println("koko")
 		return nil, err
 	}
 
